@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>2 player shooting game</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <section class="secItems">
+      <h6>Total Rounds : <span class="total-rounds"></span></h6>
+      <h1><span class="round"></span></h1>
+      <button class="new-game" onClick=newGame();>NEW GAME</button>
+      <button class="rules" onClick=openMenu()>R</button>
+
+      <div class="start">
+        <button class="btn" class="start" data-id="start">Start</button>
+
+      </div>
+
+
+      <div class="content-sec">
+        <div>
+          <button class="btn" data-id="first_btn">button1</button>
+          <p>first person score</p><span class="first-point"></span>
+          <p>first person point</p><span class="first-person-status"></span>
+
+        </div>
+
+        <div>
+          <button class="btn" data-id="second-btn">button2</button>
+          <p>second person score</p><span class="second-point"></span>
+          <p>second person point</p><span class="second-person-status"></span>
+
+        </div>
+
+      </div>
+
+
+      <h2>Winner:<span class="final-result"></span></h2>
+
+      <div class="dropDown" id="btt" onClick=menuClose()>
+
+
+      </div>
+
+
+    </section>
+
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
